@@ -9,20 +9,33 @@ public class BubbleSort {
 	 * @param nums
 	 */
 	public static void bubbleSort(int[] nums){
+//		 int length=nums.length;
+//		 boolean flag;//标记，是否存在交换，如果不存在交换则说明数据已经有序
+//		 for(int i=0;i<length;i++){
+//			 flag=false;
+//			 for(int j=0;j<length-i-1;j++){
+//				 if(nums[j]>nums[j+1]){
+//					 Swap.swap(nums, j);
+//					 flag=true;
+//				 }
+//			 }
+//			 if(flag!=true){
+//				 break;
+//			 }
+//		 }
 		 int length=nums.length;
-		 boolean flag;//标记，是否存在交换，如果不存在交换则说明数据已经有序
-		 for(int i=0;i<length;i++){
+		 boolean flag;
+		 for (int i=0;i<length;i++){
 			 flag=false;
-			 for(int j=0;j<length-i-1;j++){
-				 if(nums[j]>nums[j+1]){
-					 Swap.swap(nums, j);
-					 flag=true;
-				 }
-			 }
-			 if(flag!=true){
-				 break;
-			 }
+		 	for (int j=0;j<length-i-1;j++){
+		 		if (nums[j]>nums[j+1]){
+		 			Swap.swap(nums,j);
+		 			flag=true;
+				}
+			}
+			if(!flag){
+		 		break;
+			}
 		 }
-		 
 	}
 }

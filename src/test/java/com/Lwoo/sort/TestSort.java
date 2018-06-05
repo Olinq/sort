@@ -1,10 +1,11 @@
 package com.Lwoo.sort;
 
-import java.util.Arrays;
-
 import org.junit.Test;
 
+import java.util.Arrays;
+
 public class TestSort {
+
 	@Test
 	public void test(){
 		int[] nums={1,5,8,8,9,4,3,2,0};
@@ -12,5 +13,7 @@ public class TestSort {
 //		BubbleSort.bubbleSort(nums);
 		QuickSort.quickSort(nums, 0, nums.length-1);
 		System.out.println(Arrays.toString(nums));
+
 	}
+
 }
