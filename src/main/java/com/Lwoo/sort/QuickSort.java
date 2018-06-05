@@ -2,7 +2,7 @@ package com.Lwoo.sort;
 
 public class QuickSort {
 	/**
-	 * 
+	 * 快速排序的时间复杂度为O(nlg2n)
 	 * @param nums
 	 * @param left
 	 * @param right
